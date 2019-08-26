@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+.vertical-menu {
+  width: 80px; /* Set a width if you like */
+}
+img {
+  width: 50%;
+}
+.vertical-menu a {
+  background-color: red;
+  display: block;
+  text-align: center;
+  position: relative;
+  height: 50px;
+  padding-top: 12px;
+}
+.vertical-menu a .sidetext {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.3s linear;
+  text-align: center;
+  height: 40px;
+  padding-top: 22px;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 0;
+}
+
+.vertical-menu a:hover {
+  /*   transition-property: background-color; */
+  background-color: gray;
+}
+
+.vertical-menu a:hover .sidetext {
+  transform: translateX(50px);
+  opacity: 1;
+  color: rgb(236, 2, 2);
+  background-color: rgb(206, 195, 197);
+  position: absolute;
+  top: 0;
+  right: -49px;
+}
+
+.button {
+  padding: 20px 25px;
+  width: 250px;
+  height: 30px;
+  margin: 10% 90% 10% 20%;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid white;
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: transform 2s linear;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+  transition-property: background-color width height font-size;
+  transition-duration: 3s;
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+  transform: translateX(200px);
+}
